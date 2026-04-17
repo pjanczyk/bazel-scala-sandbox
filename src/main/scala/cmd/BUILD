@@ -5,7 +5,7 @@ load("@rules_pkg//:pkg.bzl", "pkg_tar")
 scala_binary(
     name = "runner",
     srcs = ["Runner.scala"],
-    main_class = "cmd.Runner",
+    main_class = "cmd.main",
     deps = ["//src/main/scala/lib:greeting"],
 )
 

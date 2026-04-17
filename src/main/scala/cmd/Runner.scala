@@ -1,8 +1,8 @@
 package cmd
 
-import lib.Greeting
+import lib.Greeting.*
+import scala.util.chaining.*
 
-object Runner {
-  def main(args: Array[String]): Unit =
-    println(Greeting.createHiMessage("from Scala Service!"))
-}
+@main def main(): Unit =
+  createHiMessage("from Scala Service!")
+    .pipe(println)
