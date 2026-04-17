@@ -4,7 +4,7 @@ scala_toolchain(
     name = "custom_scala_toolchain_impl",
     enable_semanticdb = True,  # helps IDE
     scalacopts = [
-        "-Ywarn-unused",
+        "-Wunused:all",
     ],
     semanticdb_bundle_in_jar = False,
     strict_deps_mode = "error",
